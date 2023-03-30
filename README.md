@@ -12,7 +12,7 @@ Professor: [Leonardo Ataide Minora](https://github.com/leonardo-minora)
 
 Aluno: [Pedro Henrique de Sousa Varela](https://github.com/pedrohsv1)
 
-GitHub: 
+GitHub: (https://github.com/pedrohsv1)
 
 ## Log do projeto
 | Data | Descrição |
