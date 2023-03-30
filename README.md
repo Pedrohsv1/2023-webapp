@@ -10,6 +10,10 @@ Localidade: IFRN-CNAT-DIATINF
 
 Professor: [Leonardo Ataide Minora](https://github.com/leonardo-minora)
 
+Aluno: [Pedro Henrique de Sousa Varela](https://github.com/pedrohsv1)
+
+GitHub: 
+
 ## Log do projeto
 | Data | Descrição |
 | --- | --- |
