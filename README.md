@@ -17,4 +17,4 @@ GitHub: (https://github.com/pedrohsv1)
 ## Log do projeto
 | Data | Descrição |
 | --- | --- |
-
+| 2023 | Projeto HTML POS |
