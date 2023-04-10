@@ -1,0 +1,28 @@
+body {
+    margin: 4em;
+}
+
+nav {
+    height: 2em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+    background-color: black;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 1s all;
+}
+nav a:hover {
+    color: rgb(231, 109, 9);
+    font-size: 18px;
+}
+
+span {
+    color: rgb(231, 109, 9);
+}

@@ -1,0 +1,15 @@
+{
+  "name": "2023-webapp",
+  "version": "1.0.0",
+  "description": "Projeto de exemplo da disciplina de Programação Orientada a Serviço",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
