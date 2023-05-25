@@ -1,4 +1,4 @@
-const ListItem = (props: {titulo: string, indice: number}) => {
+const ListItem = (props: {titulo: string}) => {
   return (
     <>
       <li>{props.titulo}</li>
@@ -18,7 +18,7 @@ const Lista = () => {
   return(
     <div className="card">
       <ul>
-        <ListItem indice={0} titulo={tarefas[0]}/>
+        <ListItem key={23} titulo={tarefas[0]}/>
         <li key={1}>{tarefas[0]}</li>
         <li key={2}>{tarefas[1]}</li>
         <li key={3}>{tarefas[2]}</li>
