@@ -1,35 +1,66 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+const ListItem = (props: {titulo: string, indice: number}) => {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <li>{props.titulo}</li>
     </>
   )
 }
 
-export default App
+const Lista = () => {
+  const tarefas = [
+    "Baixar o prejto do GitHub",
+    "Istalar bibliotecas do GitHub",
+    "Executar aplicação web",
+    "Programar em Js e React",
+    "Guardar as modificações do repositorio",
+    "Publicar as modificações no GitHub"
+  ]
+  return(
+    <div className="card">
+      <ul>
+        <ListItem indice={0} titulo={tarefas[0]}/>
+        <li key={1}>{tarefas[0]}</li>
+        <li key={2}>{tarefas[1]}</li>
+        <li key={3}>{tarefas[2]}</li>
+        <li key={4}>{tarefas[3]}</li>
+        <li key={5}>{tarefas[4]}</li>
+        <li key={6}>{tarefas[5]}</li>
+      </ul>
+    </div>
+    )
+}
+
+const ListaMap = () => {
+  const tarefas = [
+    "Baixar o prejto do GitHub",
+    "Istalar bibliotecas do GitHub",
+    "Executar aplicação web",
+    "Programar em Js e React",
+    "Guardar as modificações do repositorio",
+    "Publicar as modificações no GitHub"
+  ]
+  return(
+    <div className="card">
+      <ul>
+        {tarefas.map((tarefa, ind) => {
+          return (
+            <ListItem key={ind} titulo={tarefa}/>
+          )
+        })}
+      </ul>
+    </div>
+    )
+}
+
+export default function App() {
+
+
+
+  return (
+    <>
+    <Lista />
+    <ListaMap />
+    </>
+  )
+}
+
